@@ -86,6 +86,7 @@ class EmojiInlineProcessor(InlineProcessor):
         el.set("src", url)
         el.set("title", tag)
         el.set("alt", tag)
+        el.set("class", "emoji")
         return el, m.start(0), m.end(0)
 
 
